@@ -1,0 +1,15 @@
+.bg-orange {
+    background-color: orangered;
+}
+
+.tex-orange {
+    color: orangered !important;
+}
+
+.container-fluid {
+    height: 93vh;
+}
+
+.container-form {
+    width: 30%;
+}
