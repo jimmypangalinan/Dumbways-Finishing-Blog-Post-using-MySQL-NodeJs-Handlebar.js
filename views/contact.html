@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../public/assets/css/style-index.css">
+    <script src="../public/assets/js/js.js"></script>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav>
+        <div class="nav-left">
+            <a href="index"><img src="../public/assets/img/logo2.png" alt="logo"></a>
+            <ul class="menu-left">
+                <li><a href="index"> Home</a></li>
+                <li><a href="add-blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact">Contact</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container-contact-form">
+        <div>
+            <label class="heading" for=""> Insert Your Data </label>
+        </div>
+        <form class="form" action="">
+            <input class="input" type="text" placeholder="Name" id="name">
+            <input class="input" type="email" placeholder="Email" id="mail">
+            <input class="input" type="number" placeholder="Phone Number" id="phone">
+
+            <div class="form-checkbox" name="" id="">
+                <div class="div-form-checkbox">
+                    <label for="easy">Hobi :</label>
+                    <input type="checkbox" name="" id="koding" value="Koding">
+                    <label for="easy">Koding</label>
+                </div>
+                <div class="div-form-checkbox">
+                    <input type="checkbox" name="" id="makan" value="Makan">
+                    <label for="medium">Makan</label>
+                </div>
+
+            </div>
+
+
+            <select class="input" name="" id="subject">
+                <option value="">Select Your Problem</option>
+                <option>Our Services</option>
+                <option>Server Down</option>
+                <option>No Internet Connection</option>
+            </select>
+            <textarea class="textarea" name="" id="message" cols="30" rows="10"
+                placeholder="Insert Your Message"></textarea>
+        </form>
+        <div class="div-button">
+            <button type="button" onclick="submitData()" class="button" type="submit">Submit</button>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <div>
+
+    </div>
+</body>
+
+</html>

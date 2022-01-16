@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* ---------Navbar------------ */
+
+nav{
+    display: flex;
+    font-size: 25px;
+    height: 60px;
+    box-shadow: 0 0 2px black;
+    background-color: #2E5266FF;
+}
+
+.nav-left{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex: 50%;
+    align-items: center;  /* agar kontenya berada di tengah2*/
+    /* margin-left: 250px; */
+    /* margin: 12px 0px 12px 250px; */
+}
+
+.nav-left a img{
+    /* background-color: cadetblue; */
+    width: 80px;
+    margin-left: 250px;
+}
+
+.nav-left .menu-left{
+    /* background-color: brown; */
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-left ul{
+    /* background-color: burlywood; */
+    text-decoration: none;
+    width: 40%;
+    justify-content: space-around;
+    /* display: inline; */
+}
+
+.nav-left .menu-left a{
+    /* background-color: violet; */
+    text-decoration: none;
+    color: white;
+    /* color: black; */
+    /* margin-left: 70px; */
+    
+}
+
+.menu-left a:hover{
+    color: gray;
+}
+
+.nav-right{
+    /* background-color: rgb(172, 110, 17); */
+    flex: 50%;
+    /* justyfy-conten :flex-end untuk membuat conten berada paling ujung kanan */
+    justify-content: flex-end;
+    /* display:flex: untuk membuat konten otomatis berukuran ditengah box */
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+    /* margin: 12px 250px 12px 0px; */
+}
+
+.nav-right a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 6px 17px;
+    border-radius: 15px;
+    box-shadow: 0 0  5px white;
+}
+
+.nav-right a:hover{
+    background-color: white;
+    color: gray;
+}
+
+/* ---------Navbar------------ */
+body {
+    background-color: #D3D0CBFF;
+  }
+
+/* ---------body------------ */
+
+.container{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    margin: 60px auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* margin-left: 250px; */
+    /* padding-left: 80px; */
+    border-radius: 30px;
+    box-shadow: 0 0 2px gray;
+}
+
+
+.div-left{
+    /* background-color: turquoise; */
+    flex: 40%;
+    box-sizing: border-box;
+    padding: 18px;
+    border-radius: 30px;
+    box-shadow: 0 0 12px gray;
+}
+
+.div-left-card{
+    /* background-color: yellowgreen; */
+    width: auto;
+    box-sizing: border-box;
+    /* padding-top: 30px; */
+}
+
+
+.div-left-card img{
+    border-radius: 30px;
+    /* width: auto; */
+    /* display: flex; */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h1{
+    /* background-color: wheat; */
+    font-size: 45px;
+}
+
+
+.container .span-div-left{
+    background-color: black;
+    font-size: 25px;
+    padding: 5px 9px;
+    border-radius: 9px;
+    color: white;
+}
+
+.container .table-div-left{
+    /* background-color: tomato; */
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    /* border-collapse: collapse; */
+    /* display: flex; */
+}
+
+th, td{
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.container .div-right{
+    /* background-color: rgb(19, 71, 66); */
+    flex: 60%;
+    box-sizing: border-box;
+}
+
+.container .div-right .div-right-card{
+    /* background-color: brown; */
+    padding: 50px 30px 0px 45px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.div-right-card p{
+    font-size: 18px;
+
+}
+
+.container .skill-container{
+    /* background-color: cadetblue; */
+    padding: 40px 0px 0px 45px;
+    display: flex;
+}
+
+.container .skill-container h4{
+    /* background-color: chartreuse; */
+    padding: 18px 0px 10px;
+    font-size: 18px;
+}
+
+.container .skill-container p{
+    /* background-color: rebeccapurple; */
+    padding-right: 25px;
+    font-size: 17px;
+}
+
+/* ---------end body------------ */
+
+
+
+
+/* --------------------------------------------- */
+/* ----------style for contact.html------------- */
+/* --------------------------------------------- */
+
+
+.container-contact-form{
+    /* background-color: gray; */
+    width: 50%;
+    margin: 90px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    background-image: url(../img/gray-background.jpg);
+}
+
+.heading{
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 24px 0px;
+}
+
+.form{
+    /* background-color: hotpink; */
+    width: 500px;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* padding: 10px 200px; */
+    /* text-align: center; */
+    /* background-image: url(.); */
+}
+
+.input{
+    /* background-color: indigo; */
+    width: 450px;
+    height: 45px;
+    padding: 0px 0px 0px 20px;
+    margin: 20px;
+    border-radius: 15px;
+    border : 0;
+    font-size: 17px;
+    box-shadow: 0 0 12px black;
+
+}
+
+.form-checkbox{
+    /* background-color: green; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+.div-form-checkbox{
+    /* background-color: greenyellow; */
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+.div-form-checkbox label{
+    /* background-color: grey; */
+    margin: 0px 15px;
+    font-family: sans-serif;
+}
+
+.container-contact-form .form .textarea{
+    /* background-color: indigo; */
+    width: 450px;
+    height: 100px;
+    padding: 10px 0px 0px 20px;
+    margin: 20px;
+    border-radius: 15px;
+    border : 0;
+    font-size: 17px;
+    resize: vertical;
+    box-shadow: 0 0 8px black;
+}
+
+.div-button{
+    /* background-color: blanchedalmond; */
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+}
+
+.button{
+    background-color: black;
+    width: 450px;
+    height: 45px;
+    /* margin: 2px  255px 35px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px white;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 420px) {
+    .container{
+        width: 90px;
+    }
+}

@@ -9,6 +9,8 @@
   "author": "Jimmi Pangalinan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "pg": "^8.7.1"
   }
 }

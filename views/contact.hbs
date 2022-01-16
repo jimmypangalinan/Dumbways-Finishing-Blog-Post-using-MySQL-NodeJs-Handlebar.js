@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/assets/css/style-contact.css">
+    <script src="../public/assets/js/js.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand text-white " href="/">JP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active text-white" aria-current="page" href="blog">Blog</a>
+                </div>
+            </div>
+            <div>
+                <a href="contact" class="btn btn-info" role="button" data-bs-toggle="button">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Awal form-contact -->
+    <div class="container mt-5">
+        <h1>Contact Me !</h1>
+
+        <form class="row g-3">
+
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+            </div>
+
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+            </div>
+
+            <div class="col-md-8">
+                <label for="emailInfo" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="emailInfo">
+            </div>
+
+            <div class="col-md-4">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="+62 . . ">
+            </div>
+
+            <div class="col-md-12">
+                <label for="checkbox" class="form-label">Hobby :</label><br>
+                <input type="checkbox" class="form-check-input" id="coding">
+                <label class="form-check-label col-3" for="coding">Coding</label>
+                <input type="checkbox" class="form-check-input" id="movie">
+                <label class="form-check-label" for="movie">Movie</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label">Selcet Your Problem</label>
+                <select id="subject" class="form-select">
+                    <option>Select Here</option>
+                    <option>Maintainance Display</option>
+                    <option>Server Down</option>
+                    <option>Website Error</option>
+                </select>
+            </div>
+
+            <div class="col-md-12">
+                <label for="comments" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Insert Message"></textarea>
+            </div>
+            <div class="col-md-12">
+                <button type="button" onclick="submitData()" class="btn btn-primary" type="submit"
+                    style="background-color: #2e5266ff;">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Akhir form-contact -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f3f4f5" fill-opacity="1"
+            d="M0,32L40,42.7C80,53,160,75,240,101.3C320,128,400,160,480,144C560,128,640,64,720,74.7C800,85,880,171,960,176C1040,181,1120,107,1200,74.7C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</body>
+
+</html>
