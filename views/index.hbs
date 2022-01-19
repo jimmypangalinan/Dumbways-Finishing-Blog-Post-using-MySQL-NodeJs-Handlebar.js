@@ -15,14 +15,14 @@
     <!-- Start Navbar -->
     <nav>
         <div class="nav-left">
-            <a href="/"><img src="../public/assets/img/logo2.png" alt="logo" width="75px"></a>
+            <a href="/"><img src="../public/assets/img/logojp.png" alt="logo" width="75px"></a>
             <ul class="menu-left">
                 <li><a href="/"> Home</a></li>
-                <li><a href="blog">Blog</a></li>
+                <li><a href="/blog">Blog</a></li>
             </ul>
         </div>
         <div class="nav-right">
-            <a href="contact">Contact</a>
+            <a href="/contact">Contact</a>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -42,22 +42,18 @@
             </div><br>
             <div>
                 <table class="table-div-left">
+
                     <tr>
                         <th>Experience</th>
                         <th>Year</th>
                     </tr>
+
+                    {{#each blogsexp}}
                     <tr>
-                        <td>IT Spport - CV. Priboemi Consultant</td>
-                        <td>2018</td>
+                        <td> {{pengalaman}} </td>
+                        <td> {{tahun}} </td>
                     </tr>
-                    <tr>
-                        <td>Full Stack Web Dev - Balukan.com</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Teacher - Chatolic Senior High School</td>
-                        <td>2021</td>
-                    </tr>
+                    {{/each}}
                 </table>
             </div>
         </div>

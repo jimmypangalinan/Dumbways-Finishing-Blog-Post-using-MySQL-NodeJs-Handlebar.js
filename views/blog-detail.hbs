@@ -35,17 +35,18 @@
   <!-- Akhir Navbar -->
 
   <!-- Blog -->
+  {{#each blogsData}}
   <div class="blog-detail">
     <div class="blog-detail-container">
-      <h1> {{blog.title}} </h1>
-      <div class="author"> {{blog.postAt}} | {{blog.author}} </div>
+      <h1> {{this.title}} </h1>
+      <div class="author"> {{this.postAt}} | {{this.author}} </div>
       <img src="../public/assets/img/blog-img-detail.png" alt="detail" />
       <p>
-        {{blog.content}}
+        {{this.content}}
       </p>
     </div>
   </div>
-
+  {{/each}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>

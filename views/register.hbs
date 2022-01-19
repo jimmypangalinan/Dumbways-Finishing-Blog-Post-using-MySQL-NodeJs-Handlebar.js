@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/assets/css/style-contact.css">
@@ -38,58 +38,35 @@
         </div>
     </nav>
     <!-- akhir navbar -->
+    {{#if messages.danger}}
+    <div class="alert alert-danger" role="alert">
+        {{messages.danger}}
+    </div>
+    {{/if}}
+
+
 
     <!-- Awal form-contact -->
     <div class="container mt-5">
-        <h1>Contact Me !</h1>
+        <h1>Register !</h1>
 
-        <form class="row g-3">
-
-            <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName">
-            </div>
-
-            <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName">
-            </div>
-
-            <div class="col-md-8">
-                <label for="emailInfo" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="emailInfo">
-            </div>
-
-            <div class="col-md-4">
-                <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber" placeholder="+62 . . ">
-            </div>
-
-            <div class="col-md-12">
-                <label for="checkbox" class="form-label">Hobby :</label><br>
-                <input type="checkbox" class="form-check-input" id="coding">
-                <label class="form-check-label col-3" for="coding">Coding</label>
-                <input type="checkbox" class="form-check-input" id="movie">
-                <label class="form-check-label" for="movie">Movie</label>
-            </div>
+        <form class="row g-6 col-md-5" action="/register" method="post">
 
             <div class="mb-3">
-                <label for="subject" class="form-label">Selcet Your Problem</label>
-                <select id="subject" class="form-select">
-                    <option>Select Here</option>
-                    <option>Maintainance Display</option>
-                    <option>Server Down</option>
-                    <option>Website Error</option>
-                </select>
+                <label for="InputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" name="inputName">
+            </div>
+            <div class="mb-3">
+                <label for="InputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" name="inputPassword">
             </div>
 
             <div class="col-md-12">
-                <label for="comments" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Insert Message"></textarea>
-            </div>
-            <div class="col-md-12">
-                <button type="button" onclick="submitData()" class="btn btn-primary" type="submit"
-                    style="background-color: #2e5266ff;">Submit</button>
+                <button class="btn btn-primary" type="submit" style="background-color: #2e5266ff;">Submit</button>
             </div>
         </form>
     </div>
